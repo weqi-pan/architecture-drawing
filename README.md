@@ -6,7 +6,7 @@
 
 ## 安装
 
-[![skills.sh](https://skills.sh/b/weqi-pan/test)](https://skills.sh/weqi-pan/test)
+技能目录页：<https://skills.sh/weqi-pan/test>
 
 ```powershell
 # 通过 skills CLI 安装（推荐）
@@ -21,6 +21,9 @@ python -m pip install -r test/requirements.txt
 ```
 
 默认装到当前项目的 `<agent>/skills/`；加 `-g` 装到用户级（跨项目可用），加 `-a <agent>` 指定目标 agent。安装后技能名为 `architecture-drawing`。
+
+> 安装量统计生效后（skills.sh 需要至少一次安装遥测才会渲染徽章），可在本节顶部加安装量徽章：
+> `[![skills.sh](https://skills.sh/b/weqi-pan/test)](https://skills.sh/weqi-pan/test)`
 
 ## 实际作用
 
