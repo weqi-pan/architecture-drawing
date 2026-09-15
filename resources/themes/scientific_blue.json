@@ -1,0 +1,49 @@
+{
+  "id": "scientific_blue",
+  "name": "科研蓝",
+  "effect_level": "minimal",
+  "font": "Aptos",
+  "background": "#FBFCFD",
+  "node_corner_radius": 0.08,
+  "colors": {
+    "primary": "#355C7D",
+    "secondary": "#E7F0F7",
+    "accent": "#61A0AF",
+    "background": "#FBFCFD",
+    "line": "#6C8293",
+    "text_primary": "#355C7D",
+    "text_secondary": "#64748B"
+  },
+  "header": {
+    "fill": "#355C7D",
+    "border": {
+      "color": "#355C7D",
+      "width": 0.5
+    },
+    "shadow": {
+      "enabled": false
+    }
+  },
+  "node": {
+    "fill": "#E7F0F7",
+    "border": {
+      "color": "#355C7D",
+      "width": 1.0
+    },
+    "shadow": {
+      "enabled": false
+    },
+    "glow": {
+      "enabled": false
+    }
+  },
+  "connector": {
+    "color": "#6C8293",
+    "width": 1.25
+  },
+  "band": {
+    "fill": "#EFF5F9",
+    "border": "#D3E1EC",
+    "label_color": "#355C7D"
+  }
+}

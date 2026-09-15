@@ -1,0 +1,49 @@
+{
+  "id": "enterprise_tech",
+  "name": "企业科技",
+  "effect_level": "minimal",
+  "font": "Aptos",
+  "background": "#F7F9FC",
+  "node_corner_radius": 0.08,
+  "colors": {
+    "primary": "#26354A",
+    "secondary": "#E5ECF5",
+    "accent": "#4F8EF7",
+    "background": "#F7F9FC",
+    "line": "#718096",
+    "text_primary": "#26354A",
+    "text_secondary": "#64748B"
+  },
+  "header": {
+    "fill": "#26354A",
+    "border": {
+      "color": "#26354A",
+      "width": 0.5
+    },
+    "shadow": {
+      "enabled": false
+    }
+  },
+  "node": {
+    "fill": "#E5ECF5",
+    "border": {
+      "color": "#26354A",
+      "width": 1.0
+    },
+    "shadow": {
+      "enabled": false
+    },
+    "glow": {
+      "enabled": false
+    }
+  },
+  "connector": {
+    "color": "#718096",
+    "width": 1.25
+  },
+  "band": {
+    "fill": "#EDF1F7",
+    "border": "#D3DCE8",
+    "label_color": "#26354A"
+  }
+}

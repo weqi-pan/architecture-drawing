@@ -1,0 +1,52 @@
+# architecture-drawing skill configuration
+
+skill:
+  name: architecture-drawing
+  language: zh-CN
+  entrypoint: scripts/main.py
+  prepare_source: scripts/prepare_source.py
+
+paths:
+  source_package: src
+  scripts: scripts
+  examples: examples
+  resources: resources
+  themes: resources/themes
+  tests: tests
+  generated_artifacts: artifacts
+
+pipeline:
+  semantic_source: agent
+  model_contract: ArchitectureModel
+  accepted_inputs: [".json"]
+  default_renderer: editable_pptx
+  deterministic_layout: true
+  raster_page_fallback: false
+  office_com_dependency: false
+  require_agent_semantics: true
+
+document:
+  supported_inputs: [".docx", ".md", ".markdown", ".txt"]
+  unsupported_inputs: [".pdf", ".ppt", ".pptx", ".xls", ".xlsx", ".rtf", "images"]
+  ocr: false
+  locators: ["p<n>", "t<n>", "L<n>"]
+
+themes:
+  default: enterprise_tech
+  directory: resources/themes
+  available:
+    - government_blue
+    - scientific_blue
+    - enterprise_tech
+    - academic_minimal
+    - industrial_engineering
+    - tech_gradient
+
+ooxml:
+  gradient_fill: true
+  gradient_line: true
+  transparency: true
+  outer_shadow: true
+  glow: true
+  soft_edge: false
+  glass_blur: false

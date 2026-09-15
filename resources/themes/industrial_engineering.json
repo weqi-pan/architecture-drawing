@@ -1,0 +1,49 @@
+{
+  "id": "industrial_engineering",
+  "name": "工业工程",
+  "effect_level": "minimal",
+  "font": "Aptos",
+  "background": "#FAFBFC",
+  "node_corner_radius": 0.06,
+  "colors": {
+    "primary": "#425466",
+    "secondary": "#E8EEF2",
+    "accent": "#F59E0B",
+    "background": "#FAFBFC",
+    "line": "#667085",
+    "text_primary": "#425466",
+    "text_secondary": "#64748B"
+  },
+  "header": {
+    "fill": "#425466",
+    "border": {
+      "color": "#425466",
+      "width": 0.5
+    },
+    "shadow": {
+      "enabled": false
+    }
+  },
+  "node": {
+    "fill": "#E8EEF2",
+    "border": {
+      "color": "#425466",
+      "width": 1.0
+    },
+    "shadow": {
+      "enabled": false
+    },
+    "glow": {
+      "enabled": false
+    }
+  },
+  "connector": {
+    "color": "#667085",
+    "width": 1.25
+  },
+  "band": {
+    "fill": "#F0F3F6",
+    "border": "#DCE3E9",
+    "label_color": "#425466"
+  }
+}

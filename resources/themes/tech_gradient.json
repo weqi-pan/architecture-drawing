@@ -1,0 +1,97 @@
+{
+  "id": "tech_gradient",
+  "name": "科技渐变风",
+  "effect_level": "moderate",
+  "font": "Aptos",
+  "background": "#F7FAFF",
+  "node_corner_radius": 0.08,
+  "colors": {
+    "background": "#F7FAFF",
+    "primary": "#146EF5",
+    "secondary": "#F4F7FF",
+    "accent": "#18B6D9",
+    "line": "#5276C6",
+    "text_primary": "#183B68",
+    "text_secondary": "#64748B"
+  },
+  "header": {
+    "fill": {
+      "type": "gradient",
+      "angle": 0,
+      "stops": [
+        {
+          "position": 0.0,
+          "color": "#126CF4",
+          "opacity": 1.0
+        },
+        {
+          "position": 0.52,
+          "color": "#4F6BDE",
+          "opacity": 1.0
+        },
+        {
+          "position": 1.0,
+          "color": "#7358E9",
+          "opacity": 1.0
+        }
+      ]
+    },
+    "border": {
+      "color": "#5276C6",
+      "width": 0.8
+    },
+    "shadow": {
+      "enabled": true,
+      "color": "#315BA0",
+      "opacity": 0.14,
+      "blur": 6,
+      "distance": 1.5,
+      "direction": 270
+    }
+  },
+  "node": {
+    "fill": {
+      "type": "gradient",
+      "angle": 90,
+      "stops": [
+        {
+          "position": 0.0,
+          "color": "#FFFFFF",
+          "opacity": 0.98
+        },
+        {
+          "position": 1.0,
+          "color": "#F4F7FF",
+          "opacity": 0.96
+        }
+      ]
+    },
+    "border": {
+      "color": "#8DA8E8",
+      "width": 1.0
+    },
+    "shadow": {
+      "enabled": true,
+      "color": "#315BA0",
+      "opacity": 0.12,
+      "blur": 5,
+      "distance": 1.5,
+      "direction": 270
+    },
+    "glow": {
+      "enabled": false,
+      "color": "#18B6D9",
+      "opacity": 0.16,
+      "radius": 2.5
+    }
+  },
+  "connector": {
+    "color": "#5276C6",
+    "width": 1.25
+  },
+  "band": {
+    "fill": "#F2F6FF",
+    "border": "#D6E2FA",
+    "label_color": "#146EF5"
+  }
+}

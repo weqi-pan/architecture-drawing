@@ -1,0 +1,49 @@
+{
+  "id": "academic_minimal",
+  "name": "论文简约",
+  "effect_level": "minimal",
+  "font": "Aptos",
+  "background": "#FFFFFF",
+  "node_corner_radius": 0.04,
+  "colors": {
+    "primary": "#333333",
+    "secondary": "#F2F2F2",
+    "accent": "#777777",
+    "background": "#FFFFFF",
+    "line": "#555555",
+    "text_primary": "#333333",
+    "text_secondary": "#6B6B6B"
+  },
+  "header": {
+    "fill": "#333333",
+    "border": {
+      "color": "#333333",
+      "width": 0.5
+    },
+    "shadow": {
+      "enabled": false
+    }
+  },
+  "node": {
+    "fill": "#F2F2F2",
+    "border": {
+      "color": "#333333",
+      "width": 0.75
+    },
+    "shadow": {
+      "enabled": false
+    },
+    "glow": {
+      "enabled": false
+    }
+  },
+  "connector": {
+    "color": "#555555",
+    "width": 1.0
+  },
+  "band": {
+    "fill": "#F7F7F7",
+    "border": "#E0E0E0",
+    "label_color": "#333333"
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "name": "architecture-drawing",
+  "display_name": "Agent 架构图生成技能",
+  "version": "4.2.0",
+  "language": "zh-CN",
+  "license": "MIT",
+  "entrypoint": "scripts/main.py",
+  "supporting_entrypoints": ["scripts/prepare_source.py", "scripts/validate_ooxml_effects.py"],
+  "description": "Agent 读取项目文档并产出 ArchitectureModel，确定性代码生成原生可编辑的 PowerPoint 架构图；输出只有 pptx。",
+  "capabilities": [
+    "document preparation for docx, markdown and txt with source locators",
+    "bounded extraction of untrusted documents (size, part count and block limits)",
+    "agent-first semantic contract (ArchitectureModel)",
+    "layered band layout with flow ordering and barycenter column alignment",
+    "orthogonal routing with native arrow heads and label collision avoidance",
+    "layout validation including band containment",
+    "editable PPTX rendering with priority/status visual weight",
+    "theme data files and reference style contract",
+    "OOXML gradient, transparency, shadow and glow effects"
+  ],
+  "outputs": ["pptx"],
+  "dependencies": {
+    "required": ["python>=3.10"],
+    "optional": ["python-pptx (brings lxml)"],
+    "office": false
+  },
+  "exit_codes": {
+    "0": "layout validation passed",
+    "2": "validation failed, input rejected, or evidence insufficient",
+    "3": "prepare_source: unsupported input format",
+    "4": "prepare_source: input exceeds extraction limits"
+  },
+  "removed_in_4_0_0": [
+    "drawio renderer and validators",
+    "evidence/spec/layout_plan chain",
+    "png preview renderer",
+    "raw text fallback parsing"
+  ],
+  "layout": {
+    "instructions": "SKILL.md",
+    "examples": "examples/",
+    "scripts": "scripts/",
+    "resources": "resources/",
+    "themes": "resources/themes/",
+    "tests": "tests/",
+    "changelog": "CHANGELOG.md",
+    "license": "LICENSE",
+    "requirements": "requirements.txt"
+  },
+  "install": {
+    "cli": "npx skills add weqi-pan/test",
+    "repository": "https://github.com/weqi-pan/test",
+    "directory": "https://skills.sh/weqi-pan/test",
+    "discovery_paths": [".", "skills/<name>/"]
+  }
+}

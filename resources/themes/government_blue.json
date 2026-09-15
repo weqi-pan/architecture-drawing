@@ -1,0 +1,49 @@
+{
+  "id": "government_blue",
+  "name": "政务蓝",
+  "effect_level": "minimal",
+  "font": "Aptos",
+  "background": "#F7FAFD",
+  "node_corner_radius": 0.08,
+  "colors": {
+    "primary": "#1F5A94",
+    "secondary": "#DCEBFA",
+    "accent": "#2D8ACB",
+    "background": "#F7FAFD",
+    "line": "#5B7FA3",
+    "text_primary": "#1F5A94",
+    "text_secondary": "#64748B"
+  },
+  "header": {
+    "fill": "#1F5A94",
+    "border": {
+      "color": "#1F5A94",
+      "width": 0.5
+    },
+    "shadow": {
+      "enabled": false
+    }
+  },
+  "node": {
+    "fill": "#DCEBFA",
+    "border": {
+      "color": "#1F5A94",
+      "width": 1.0
+    },
+    "shadow": {
+      "enabled": false
+    },
+    "glow": {
+      "enabled": false
+    }
+  },
+  "connector": {
+    "color": "#5B7FA3",
+    "width": 1.25
+  },
+  "band": {
+    "fill": "#EAF2FB",
+    "border": "#C9DEF4",
+    "label_color": "#1F5A94"
+  }
+}

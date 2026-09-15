@@ -1,0 +1,104 @@
+{
+  "schema_version": "2.0",
+  "view_type": "overall",
+  "title": "示例政务服务平台总体架构",
+  "industry": "government-services",
+  "elements": [
+    {
+      "id": "actor-citizen",
+      "role": "actor",
+      "label": "自然人用户",
+      "status": "current",
+      "importance": "primary",
+      "children": []
+    },
+    {
+      "id": "actor-enterprise",
+      "role": "actor",
+      "label": "法人用户",
+      "status": "current",
+      "importance": "primary",
+      "children": []
+    },
+    {
+      "id": "platform-hub",
+      "role": "platform",
+      "label": "一体化政务服务平台",
+      "status": "current",
+      "importance": "primary",
+      "children": [
+        {
+          "id": "svc-portal",
+          "role": "service",
+          "label": "统一办事门户",
+          "status": "current",
+          "importance": "primary",
+          "children": []
+        },
+        {
+          "id": "svc-workflow",
+          "role": "service",
+          "label": "事项协同 BPM",
+          "status": "planned",
+          "importance": "secondary",
+          "children": []
+        }
+      ]
+    },
+    {
+      "id": "ext-national",
+      "role": "external_system",
+      "label": "国家政务服务平台",
+      "status": "current",
+      "importance": "primary",
+      "children": []
+    },
+    {
+      "id": "infra-cloud",
+      "role": "infrastructure",
+      "label": "政务云",
+      "status": "current",
+      "importance": "supporting",
+      "children": []
+    },
+    {
+      "id": "sec-iam",
+      "role": "security_concern",
+      "label": "统一身份认证",
+      "status": "current",
+      "importance": "supporting",
+      "children": []
+    }
+  ],
+  "relations": [
+    {
+      "id": "rel-citizen-hub",
+      "kind": "submission",
+      "direction": "forward",
+      "from": "actor-citizen",
+      "to": "platform-hub",
+      "importance": "primary",
+      "scope": "aggregate",
+      "label": "申报事项"
+    },
+    {
+      "id": "rel-hub-national",
+      "kind": "data_flow",
+      "direction": "bidirectional",
+      "from": "platform-hub",
+      "to": "ext-national",
+      "importance": "primary",
+      "scope": "aggregate",
+      "label": "跨层级协同"
+    }
+  ],
+  "diagnostics": [
+    {
+      "id": "diag-data-evidence",
+      "code": "MISSING_LAYER_EVIDENCE",
+      "severity": "warning",
+      "message": "数据资源层证据不足，未抽取",
+      "display": "separate_page"
+    }
+  ]
+}

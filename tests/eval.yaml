@@ -1,0 +1,19 @@
+name: architecture-drawing-regression
+description: 验证 Agent-first 架构图、DOCX 文本预处理和 OOXML PPTX 的核心不变量
+commands:
+  compile: "python -m compileall -q src scripts tests"
+  unit: "python -m unittest discover -s tests -q"
+  prepare: "python scripts/prepare_source.py examples/input/architecture-notes.md -o artifacts/prepare-smoke"
+  pipeline: "python scripts/main.py examples/model/government-overall.sample.json -o artifacts/eval --view 系统架构图 --style tech_gradient"
+  ooxml: "python scripts/validate_ooxml_effects.py artifacts/eval/系统架构图.pptx"
+pass_conditions:
+  - "unit tests exit with code 0"
+  - "prepare_source reports status OK or UNSUPPORTED without fabricating text"
+  - "pipeline validation.valid is true"
+  - "pptx output exists and is named after the requested view"
+  - "no png output is produced"
+  - "PPTX package and slide XML are valid"
+  - "generated shapes and connectors remain editable"
+  - "no duplicate fill nodes are reported"
+  - "unclassified-evidence-only models are blocked instead of rendered"
+  - "PowerPoint native open is reported as NOT_VERIFIED when Office is unavailable"

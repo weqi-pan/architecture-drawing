@@ -1,0 +1,4 @@
+# Runtime dependency for PPTX generation.
+# Everything else (DOCX/Markdown/TXT normalization, layout, validation) uses the
+# Python standard library only.
+python-pptx>=0.6.21
