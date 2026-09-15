@@ -4,13 +4,13 @@
 
 ## [4.2.0] - 2026-09-15 — 发布整理：输入上限加固、双语描述、公开仓库发布
 
-面向"作为独立技能仓库公开发布"的整理版本。发布仓库：`weqi-pan/test`（技能名 `architecture-drawing`），目录页 `https://skills.sh/weqi-pan/test`。
+面向"作为独立技能仓库公开发布"的整理版本。发布仓库：`weqi-pan/architecture-drawing`（技能名 `architecture-drawing`），目录页 `https://skills.sh/weqi-pan/architecture-drawing`。
 
 ### 新增
 
 - `LICENSE`（MIT）、`requirements.txt`（`python-pptx`），补齐独立仓库所需的元数据文件。
 - `.gitignore` 增加 `prepared/`、虚拟环境和编辑器噪声。
-- README 增加"安装"章节：`npx skills add weqi-pan/test`、`--list` 用法、skills.sh 徽章，以及克隆后手动安装的方式。
+- README 增加"安装"章节：`npx skills add weqi-pan/architecture-drawing`、`--list` 用法、skills.sh 徽章，以及克隆后手动安装的方式。
 - README 增加"输入上限"表格与端到端示例（改为使用仓库自带示例文档，不再依赖本地客户文件）。
 
 ### 变更

@@ -48,9 +48,9 @@
     "requirements": "requirements.txt"
   },
   "install": {
-    "cli": "npx skills add weqi-pan/test",
-    "repository": "https://github.com/weqi-pan/test",
-    "directory": "https://skills.sh/weqi-pan/test",
+    "cli": "npx skills add weqi-pan/architecture-drawing",
+    "repository": "https://github.com/weqi-pan/architecture-drawing",
+    "directory": "https://skills.sh/weqi-pan/architecture-drawing",
     "discovery_paths": [".", "skills/<name>/"]
   }
 }
